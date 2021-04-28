@@ -1,0 +1,14 @@
+#! /bin/bash
+echo "CPU Info:    "
+lscpu | grep Model
+lscpu | grep 'MHz'
+echo "Current User"
+whoami
+echo "Storage Capacity"
+df
+echo "Swap Space"
+free
+echo "Space on ext4 and xfs partitions"
+df -t ext4
+echo "Network Info"
+ip addr
